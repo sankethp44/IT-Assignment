@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body class="background-image">
+        <div class="container">
+            <div class="logo">
+                <img src="Images/Logo .png" alt="Supermarket Logo"  width="100" height="92">
+            </div>
+            <div class="Headername">
+                <h1><span class="fancy">Super Bazaar</span></h1>
+            </div>
+            <div class="topnav">
+                <a class="active" href="Navigation_frame.html" target="Navigation_frame" onclick="loadMarqueePage();"><img src="Images/home-removebg-preview.png" alt="Home" style="vertical-align: middle; padding-right: 10px;">
+                    <b>Home</b>
+                </a>
+                <a class="active" href="Navigation_frame1.html" target="Navigation_frame" onclick="loadMarqueePage();"><img src="Images/placeholdter.png" alt="Store locator" style="vertical-align: middle; padding-right: 10px;">
+                    <b>Store Locator</b>
+                </a>
+                <a class="active" href="Navigation_frame2.html" target="Navigation_frame" onclick="loadMarqueePage();"><img src="Images/about-us.png" alt="About Us" style="vertical-align: middle; padding-right: 10px;">
+                    <b>About Us</b>
+                </a>
+                <a class="logout">
+                </a>
+            </div>
+        </div>
+        <script>
+            function loadMarqueePage() {
+                var contentFrame = parent.frames['Content_frame'];
+    
+                if (contentFrame) {
+                    contentFrame.location.href = 'background.html';
+                }
+            }
+        </script>
+    </body>
+</html>
